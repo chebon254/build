@@ -291,7 +291,84 @@ main{
     color: #323c48;
     text-align: center;
 }
-
+.testimonial-container{
+    padding: 40px 0px;
+    position: relative;
+}
+.testimonial{
+    height: 400px;
+}
+.testimony{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+.testimony-text{
+    padding: 10px 20px;
+    margin: 0px 40px 0px 0px;
+}
+.testimony-text .quote{
+    margin: 0px 0px 12px;
+}
+.testimony-text .quote i{
+    font-size: 50px;
+    color: #dddddd;
+}
+.testimony-text p:nth-child(2){
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #323c48;
+    text-align: left;
+    margin: 16px 0px 30px;
+    line-height: 40px;
+    letter-spacing:  1px;
+}
+.testimony-text p:nth-child(3){
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #323c48;
+    text-align: left;
+    margin: 10px 0px 0px;
+}
+.testimony-text p:nth-child(3) span{
+    color: #52667C;
+}
+.testimony-select{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.testimony-select .span{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #52667C;
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimony-select .span i{
+    font-size: 26px;
+}
+.testimony-select .span:hover{
+    border: 1px solid #fb3f6c;
+    background-color: #fb3f6c;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all ease 100ms;
+}
+.testimony-img img{
+    width: 600px;
+}
 
 
 
