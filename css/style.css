@@ -9,3 +9,325 @@ body{
     width: 100% !important;
     background-color: #ffffff;
 }
+header{
+    width: 100%;
+    background-color: #F5F6F7;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.container{
+    margin: auto;
+    width: 1200px;
+}
+.nav-container{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-logo img{
+    height: 40px;
+}
+.nav-links{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-links a{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #323c48;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+.nav-links a:hover{
+    transition: all ease 100ms;
+    color: #fb3f6c;
+}
+.access-btn{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.access-btn button{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 10px 10px;
+    background-color: #323c48;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    height: fit-content;
+    width: 160px;
+}
+.access-btn button:hover{
+    transition: all ease 100ms;
+    box-shadow: 2px 2px 12px #00000033;
+    cursor: pointer;
+}
+main{
+    height: fit-content;
+    width: 100%;
+}
+.banner{
+    height: 650px;
+    width: 100%;
+    background-color: #F5F6F7;
+    padding: 200px 0px 0px;
+}
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-text{
+    height: 350px;
+}
+.banner-text h1{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #323c48;
+    margin: 0px 0px 12px;
+}
+.banner-text mark{
+    padding: 5px 10px;
+}
+.banner-text p{
+    font-size: 21px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #52667C;
+    margin: 0px 0px 30px;
+}
+.banner-text button{
+    height: 50px;
+    width: 200px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 10px 10px;
+    background-color: #323c48;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+}
+.banner-text button:hover{
+    transition: all ease 100ms;
+    box-shadow: 2px 2px 12px #00000033;
+    cursor: pointer;
+}
+.banner-img{
+    height: 350px;
+    min-width: 500px;
+    max-width: 650px;
+    flex-grow: 1;
+    border-radius: 10px;
+    background-color: #fb3f6c;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-img img{
+    width: 720px;
+}
+.market-place{
+    padding: 60px 0px;
+    background-color: #F5F6F7;
+}
+.mkt-headline .underline{
+    height: 4px;
+    width: 48px;
+    background-color: #fb3f6c;
+    border-radius: 2px;
+    margin: 0px auto 20px;
+}
+.mkt-headline h1{
+    max-width: 700;
+    margin: 0px auto 20px;
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #323c48;
+    text-align: center;
+}
+.mkt-headline p{
+    max-width:600;
+    margin: 0px auto 20px;
+    font-size: 20x;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #52667C;
+    text-align: center;
+}
+.market-place-container{
+    padding: 50px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.mkt-plc-text{
+    max-width: 500px;
+    min-width: 300px;
+    flex-grow: 1;
+}
+.mkt-plc-text h3{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #323c48;
+    text-align: left;
+    margin: 0px 0px 14px;
+}
+.mkt-plc-text p{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #52667C;
+    text-align: left;
+    margin: 0px 0px 20px;
+}
+.mkt-plc-text a{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #fb3f6c;
+    text-align: left;
+    margin: 0px 0px 20px;
+    text-decoration: none;
+}
+.mkt-plc-text a:hover{
+    text-decoration: underline;
+}
+.mkt-plc-img img{
+    width: 600px;
+}
+.lets-start{
+    padding: 60px 0px;
+    background-color: #F5F6F7;
+    width: 100%;
+}
+.lets-start-container{
+    background-color: #F5F6F7;
+}
+.lets-start-container h2{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #323c48;
+    text-align: center;
+    margin: 0px 0px 20px;
+}
+.let-guide{
+    text-align: center;
+}
+.lets-icon-text{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px auto 40px;
+}
+.lets-icon-text span{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #52667C;
+}
+.lets-icon-text span i{
+    color: #fb3f6c;
+}
+.let-guide button{
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    outline: none;
+    border: 0;
+    background-color: #fb3f6c;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 10px 0px 0px;
+}
+.let-guide button:hover{
+    transition: all ease 100ms;
+    box-shadow: 2px 2px 12px #00000033;
+    cursor: pointer;
+}
+.testimonials{
+    padding: 60px 0px;
+    background-color: #F5F6F7;
+}
+.testimonials-headline{
+    text-align: center;
+}
+.testimonials-headline span{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #323c48;
+    text-transform: uppercase;
+    text-align: center;
+}
+.testimonials-headline h1{
+    max-width: 700;
+    margin: 0px auto 20px;
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #323c48;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container{
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container{
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container{
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container{
+        width: 1200px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container{
+        width: 1200px;
+    }
+}
