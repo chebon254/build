@@ -47,6 +47,9 @@ header{
     padding: 10px 10px;
     text-decoration: none;
 }
+.nav-links .active-link{
+    color: #fb3f6c;
+}
 .nav-links a:hover{
     transition: all ease 100ms;
     color: #fb3f6c;
