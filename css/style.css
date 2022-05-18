@@ -3,6 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* == SCROLL BAR == */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #323C48;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fb3f6c;
+}
+/* == || SCROLL BAR == */
 body{
     margin: 0;
     height: 100% !important;
@@ -713,19 +729,141 @@ footer{
 }
 /* == || DEVELOPERS PAGE == */
 
+
 /* == LEARN PAGE == */
 .learn-container {
     padding: 160px 0px 40px;
 }
-
-.learn-listing {
-    width: 100%;
-    padding: 20px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
 /* == || LEARN PAGE == */
+
+/* == FAQ PAGE == */
+.faq-container {
+    padding: 160px 0px 40px;
+}
+.faq-content{
+    padding: 40px 0px;
+    max-width: 1000px;
+    flex-grow: 1;
+    margin: auto !important;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #323c48;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active-acc, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #fb3f6c;
+    float: right;
+    margin-left: 5px;
+  }
+  .active-acc:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+  .panel p{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #323c48;
+    margin: 10px;
+  }
+/* == || FAQ PAGE == */
+/* == CONTACT PAGE == */
+.contact-container {
+    padding: 160px 0px 40px;
+}
+.contact-content{
+    padding: 40px 0px;
+    max-width: 700px;
+    flex-grow: 1;
+    margin: auto !important;
+}
+form{
+    height: fit-content;
+    padding: 10px 0px 0px;
+}
+form label{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #0e3155;
+}
+form input{
+    height: 40px;
+    width: 100%;
+    padding: 0px 10px;
+    outline: none;
+    border: 0px;
+    background-color: #323c48;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #6a798c;
+    opacity: 1; /* Firefox */
+}
+
+form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #6a798c;
+}
+
+form input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #6a798c;
+}
+form textarea::placeholder{
+    color: #6a798c;
+}
+form textarea{
+    height: 100px;
+    width: 100%;
+    padding: 10px 10px;
+    outline: none;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #323c48;
+    border: 0px;
+    border-radius: 4px;
+}
+form button{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 0;
+    border-radius: 4px;
+    background-color: #14c855;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 10px 0px 0px;
+}
+/* == || CONTACT PAGE == */
 
 
 /* Extra small devices (phones, 600px and down) */
