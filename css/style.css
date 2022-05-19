@@ -734,6 +734,71 @@ footer{
 .learn-container {
     padding: 160px 0px 40px;
 }
+.learn-content{
+    padding: 40px 0px;
+}
+.learn-listing{
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.learn-image{
+    height: 370px;
+    width: 290px;
+    background-color: #323C48;
+    border-radius: 10px;
+}
+.learn-txt{
+    height: 370px;
+    padding: 0px 0px 0px 40px;
+    max-width: 500px;
+    min-width: 290px;
+    flex-grow: 1;
+}
+.ln-mini-healn{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #323c48;
+}
+.ln-main-headln{
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #323c48;
+}
+.learn-guide{
+    height: fit-content;
+    padding: 20px 0px 10px;
+}
+.learn-icon{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.learn-icon span{
+    width: 42px;
+    text-align: left;
+}
+.learn-icon i{
+    font-size: 26px;
+    color: #fb3f6c;
+}
+.learn-icon h2{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #323c48;
+}
+.learn-guide p{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #323c48;
+    text-transform: capitalize;
+    margin: 14px 14px 14px 42px;
+}
 /* == || LEARN PAGE == */
 
 /* == FAQ PAGE == */
