@@ -40,7 +40,7 @@
     opacity: 0;
     transition: 2s all ease;
 }
-.reveal.active{
+.reveal.showreveal{
     transform: translateY(0);
     opacity: 1;
 }
@@ -255,8 +255,8 @@ main{
 }
 .mkt-plc-text{
     max-width: 500px;
-    min-width: 300px;
-    flex-grow: 1;
+    min-width: 275px;
+    flex-grow: 1 !important;
 }
 .mkt-plc-text h3{
     font-size: 30px;

@@ -23,7 +23,7 @@ const menu = document.querySelector(".links");
 const toTop = document.querySelector(".to-top");
 // Onscroll Change Nav Bar Background
 window.onscroll = ()=>{
-    this.scrollY > 20 ? header.classList.add("sticky") : header.classList.remove("sticky");
+  this.scrollY > 20 ? header.classList.add("sticky") : header.classList.remove("sticky");
 }
 window.onscroll = ()=>{
   this.scrollY > 40 ? toTop.classList.add("show") : toTop.classList.remove("show");
@@ -66,10 +66,10 @@ function reveal() {
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 0;
+    var elementVisible = 4;
 
     if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
+      reveals[i].classList.add("showreveal");
     }
   }
 }
