@@ -18,6 +18,32 @@
 ::-webkit-scrollbar-thumb {
     background: #fb3f6c;
 }
+/* Animation CSS */
+@keyframes bottomReveal {
+    from{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.reveal-fixed{
+    position: relative;
+    transition: 2s all ease;
+    animation: bottomReveal 2000ms forwards;
+}
+.reveal{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
 /* == || SCROLL BAR == */
 body{
     margin: 0;
@@ -35,6 +61,33 @@ header{
 .container{
     margin: auto;
     width: 1200px;
+}
+.to-top{
+    height: 60px;
+    width: 60px;
+    box-shadow: 2px 2px 12px #00000033;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 30px;
+    background-color: #ffffff;
+    z-index: 10;
+    text-decoration: none;
+    visibility: hidden;
+}
+.to-top i{
+    color: #fb3f6c;
+    pointer-events: none;
+}
+.to-top.show{
+    visibility: visible;
+}
+header.sticky{
+    box-shadow: 2px 2px 12px #00000033;
 }
 .nav-container{
     height: 100px;
@@ -183,7 +236,9 @@ main{
     text-align: center;
 }
 .mkt-headline p{
-    max-width:600;
+    max-width: 600px;
+    min-width: 275px;
+    flex-grow: 1;
     margin: 0px auto 20px;
     font-size: 20x;
     font-family: 'Poppins', sans-serif;
@@ -210,6 +265,9 @@ main{
     color: #323c48;
     text-align: left;
     margin: 0px 0px 14px;
+    min-width: 275px;
+    max-width: 500px;
+    flex-grow: 1;
 }
 .mkt-plc-text p{
     font-size: 18px;
@@ -226,10 +284,30 @@ main{
     color: #fb3f6c;
     text-align: left;
     margin: 0px 0px 20px;
+    padding: 15px 0px 15px 24px;
     text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
-.mkt-plc-text a:hover{
-    text-decoration: underline;
+.mkt-plc-text a i{
+    color: #fb3f6c;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.mkt-plc-text a:before{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #fb3f6c33;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.mkt-plc-text a:hover:before{
+    width: 140px;
+    transition: all ease 200ms;
 }
 .mkt-plc-img img{
     width: 600px;
@@ -325,6 +403,9 @@ main{
     padding: 0px 40px;
 }
 .testimony-text{
+    max-width: 500px;
+    min-width: 275px;
+    flex-grow: 1;
     padding: 10px 20px;
     margin: 0px 40px 0px 0px;
 }
@@ -387,7 +468,7 @@ main{
     transition: all ease 100ms;
 }
 .testimony-img img{
-    width: 600px;
+    height: 400px;
 }
 footer{
     background-color: #323C48;
